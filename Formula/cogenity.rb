@@ -7,13 +7,13 @@ class Cogenity < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/kennethlynne/cogenity/releases/download/v0.35.2/cogenity-darwin-arm64"
-      sha256 "da820f29059ea2f142600a517862f4af8c294652190a51056b0eaa707c4e2e40"
+      url "https://github.com/kennethlynne/cogenity/releases/download/v0.35.3/cogenity-darwin-arm64"
+      sha256 "580a2242118618da897d86523df27a6f863dc0fcff9514676c27c94c04a69ce3"
     end
 
     on_intel do
-      url "https://github.com/kennethlynne/cogenity/releases/download/v0.35.2/cogenity-darwin-x64"
-      sha256 "ae6615fd8a8a53275a1a516c1f36219b09e06fb3ef0b99606b3dfcf6ca5ee061"
+      url "https://github.com/kennethlynne/cogenity/releases/download/v0.35.3/cogenity-darwin-x64"
+      sha256 "b1a3370e2435f2409489b7c83b6bd559ddf559345d4508edc61475fd269d1aeb"
     end
   end
 
