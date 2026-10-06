@@ -7,18 +7,26 @@ class Cogenity < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/kennethlynne/cogenity/releases/download/v0.35.4/cogenity-darwin-arm64"
-      sha256 "81bbe733cee714b5f276088de3488cad34577abe841cf548dd622a5e5fc9ff2d"
+      url "https://github.com/kennethlynne/cogenity/releases/download/v0.36.6/cogenity-darwin-arm64"
+      sha256 "d1120b7d856187815214fd67969c3e6c5abe8e608cd5f4a901b09c8997053cbc"
     end
 
     on_intel do
-      url "https://github.com/kennethlynne/cogenity/releases/download/v0.35.4/cogenity-darwin-x64"
-      sha256 "5ee066a77a5ad5db400ad88acbec01d87814a30b6b0f8494d41a48537518c396"
+      url "https://github.com/kennethlynne/cogenity/releases/download/v0.36.6/cogenity-darwin-x64"
+      sha256 "c2b56a84b51af085064364c71b240d2bcfa42c97be7da3f2b41b018b75589232"
     end
   end
 
   def install
     bin.install Dir["cogenity-darwin-*"].first => "cogenity"
+  end
+
+  def caveats
+    <<~EOS
+      Run cogenity update once to move this Homebrew installation to ~/.local/bin.
+      The migration checks the replacement and your shell PATH before removing the formula.
+      Existing mise installations stay unchanged.
+    EOS
   end
 
   test do
