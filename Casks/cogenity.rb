@@ -1,7 +1,7 @@
 cask "cogenity" do
   arch arm: "arm64", intel: "x64"
-  version "0.41.8"
-  sha256 arm: "12ae7f1a14242fe743ca16692d2305aef4799d983eae885db65e7487b86b8b16", intel: "5222f36c1ad1f13938056e2e30d21ba014892c4a7c94a870f4463fd77c2962c2"
+  version "0.41.9"
+  sha256 arm: "04954b4baf8fd54326b7447bb6724da0968861b5fd2762044baa47899a1d535b", intel: "6d4c0e9bffccea9801a6d652fcdc1d0bcebf25362dbda58f2baaa72cafd2e22f"
 
   url "https://github.com/cogenityhq/cogenity/releases/download/v#{version}/cogenity-darwin-#{arch}"
   name "Cogenity"
